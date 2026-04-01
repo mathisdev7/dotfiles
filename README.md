@@ -2,7 +2,7 @@
 
 My GNOME rice on Ubuntu 24.04.
 
-<video src="https://cdn.usearctic.sh/my_desk.mp4" controls autoplay loop muted width="100%"></video>
+[![Watch the video](https://img.shields.io/badge/▶_Watch_Demo-orange?style=for-the-badge&logo=youtube)](https://cdn.usearctic.sh/my_desk.mp4)
 
 ## Details
 
