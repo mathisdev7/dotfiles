@@ -2,7 +2,7 @@
 
 My GNOME rice on Ubuntu 24.04.
 
-![screenshot](screenshot.png)
+https://cdn.usearctic.sh/my_desk.mp4
 
 ## Details
 
@@ -11,9 +11,9 @@ My GNOME rice on Ubuntu 24.04.
 - **Theme**: WhiteSur-Dark
 - **Icons**: Cupertino-Sonoma
 - **Font**: Inter / Ubuntu Sans Mono
-- **Terminal**: Ghostty (Catppuccin Mocha)
+- **Terminal**: Ghostty (custom wallpaper-matched palette)
 - **Shell Prompt**: Starship
-- **Launcher**: Rofi
+- **Launcher**: GNOME Search
 - **Widgets**: Conky
 
 ## Apps shown
@@ -31,6 +31,8 @@ My GNOME rice on Ubuntu 24.04.
 - Rounded Window Corners Reborn
 - Date Menu Formatter
 - Compiz Magic Lamp Effect
+- Desktop Cube
+- Compiz Windows Effect (Wobbly Windows)
 
 ## Install
 
