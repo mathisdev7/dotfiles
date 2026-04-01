@@ -3,6 +3,8 @@ configuration {
     display-drun: "";
     drun-display-format: "{name}";
     font: "Inter Bold 13";
+    steal-focus: true;
+    click-to-exit: true;
 }
 
 @theme "/dev/null"
