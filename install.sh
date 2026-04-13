@@ -3,16 +3,36 @@ set -e
 
 echo "Installing dotfiles..."
 
-mkdir -p ~/.config/{conky,ghostty,cava,btop/themes,rofi,neofetch}
-
-cp conky/conky.conf ~/.config/conky/
+# Ghostty
+mkdir -p ~/.config/ghostty
 cp ghostty/config.ghostty ~/.config/ghostty/
-cp cava/config ~/.config/cava/
-cp btop/btop.conf ~/.config/btop/
-[ -f btop/catppuccin_mocha.theme ] && cp btop/catppuccin_mocha.theme ~/.config/btop/themes/
-cp starship/starship.toml ~/.config/
-cp neofetch/config.conf ~/.config/neofetch/
-cp rofi/config.rasi ~/.config/rofi/
 
-echo "Done! You may need to install: conky cava btop rofi cbonsai starship"
-echo "Run: sudo apt install conky-all cava btop rofi cbonsai"
+# Ulauncher
+mkdir -p ~/.config/ulauncher/user-themes
+cp ulauncher/settings.json ~/.config/ulauncher/
+cp -r ulauncher/liquid-glass-dark ~/.config/ulauncher/user-themes/
+
+# Zsh
+cp zshrc ~/.zshrc
+
+# Wallpapers
+mkdir -p ~/.local/share/backgrounds
+cp -r wallpapers/* ~/.local/share/backgrounds/
+
+# GNOME dconf settings
+echo "Loading GNOME settings..."
+dconf load /org/gnome/desktop/ < gnome-desktop.dconf
+dconf load /org/gnome/shell/extensions/ < gnome-extensions.dconf
+
+echo "Done!"
+echo "You may need to install: ghostty ulauncher zsh oh-my-zsh"
+echo "GNOME extensions to install via Extension Manager:"
+echo "  - Blur my Shell"
+echo "  - Compiz Windows Effect"
+echo "  - Compiz Magic Lamp Effect"
+echo "  - Dash2Dock Lite"
+echo "  - Space Bar"
+echo "  - Tiling Shell"
+echo "  - Clipboard History"
+echo "  - GNOME UI Tune"
+echo "  - User Themes"

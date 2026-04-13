@@ -1,9 +1,5 @@
 [app-folders]
-folder-children=['Utilities', 'YaST', 'Pardus', '813fa20f-6daa-47ad-962b-51ffe01a22cd']
-
-[app-folders/folders/813fa20f-6daa-47ad-962b-51ffe01a22cd]
-apps=['discord.desktop']
-name='Unnamed Folder'
+folder-children=['Utilities', 'YaST', 'Pardus']
 
 [app-folders/folders/Pardus]
 categories=['X-Pardus-Apps']
@@ -24,113 +20,50 @@ translate=true
 [background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/frost/.local/share/backgrounds/2026-03-31-09-20-03-peakpx.jpg'
-picture-uri-dark='file:///home/frost/.local/share/backgrounds/2026-03-31-09-20-03-peakpx.jpg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
+picture-uri='file:///usr/share/backgrounds/Monterey/Monterey-timed.xml'
+picture-uri-dark='file:///usr/share/backgrounds/Monterey/Monterey-timed.xml'
+primary-color='#ffffff'
+secondary-color='#000000'
 
 [input-sources]
 sources=[('xkb', 'us')]
-xkb-options=['ctrl:swap_lwin_lctl']
+xkb-options=['ctrl:lctrl_meta', 'ctrl:swap_lwin_lctl']
 
 [interface]
-clock-format='12h'
-clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-size=24
-cursor-theme='Adwaita'
-document-font-name='Inter 11'
-enable-animations=true
-enable-hot-corners=false
-font-antialiasing='rgba'
-font-hinting='slight'
-font-name='Inter 11'
-gtk-theme='WhiteSur-Dark'
-icon-theme='Papirus-Dark'
-monospace-font-name='Ubuntu Sans Mono 11'
-show-battery-percentage=true
+cursor-theme='MacTahoe-light'
+enable-hot-corners=true
+gtk-theme='Tahoe-Dark'
+icon-theme='MacTahoe-dark'
 
 [notifications]
-application-children=['firefox-firefox', 'discord', 'org-gnome-nautilus', 'org-gnome-terminal', 'code', 'org-gnome-characters', 'snapd-desktop-integration-snapd-desktop-integration', 'discord-discord', 'com-mattjakeman-extensionmanager', 'org-gnome-eog', 'apport-gtk', 'zoom', 'google-chrome', 'vlc', 'cursor', 'code-insiders', 'org-gnome-settings', 'ghostty-ghostty', 'telegram-desktop-telegram-desktop']
+application-children=['ulauncher', 'google-chrome', 'discord-discord', 'com-mitchellh-ghostty']
 
-[notifications/application/apport-gtk]
-application-id='apport-gtk.desktop'
-
-[notifications/application/code-insiders]
-application-id='code-insiders.desktop'
-
-[notifications/application/code]
-application-id='code.desktop'
-
-[notifications/application/com-mattjakeman-extensionmanager]
-application-id='com.mattjakeman.ExtensionManager.desktop'
-
-[notifications/application/cursor]
-application-id='cursor.desktop'
+[notifications/application/com-mitchellh-ghostty]
+application-id='com.mitchellh.ghostty.desktop'
 
 [notifications/application/discord-discord]
 application-id='discord_discord.desktop'
 
-[notifications/application/discord]
-application-id='discord.desktop'
-
-[notifications/application/firefox-firefox]
-application-id='firefox_firefox.desktop'
-
-[notifications/application/ghostty-ghostty]
-application-id='ghostty_ghostty.desktop'
-
 [notifications/application/google-chrome]
 application-id='google-chrome.desktop'
 
-[notifications/application/org-gnome-characters]
-application-id='org.gnome.Characters.desktop'
-
-[notifications/application/org-gnome-eog]
-application-id='org.gnome.eog.desktop'
-
-[notifications/application/org-gnome-nautilus]
-application-id='org.gnome.Nautilus.desktop'
-
-[notifications/application/org-gnome-settings]
-application-id='org.gnome.Settings.desktop'
-
-[notifications/application/org-gnome-terminal]
-application-id='org.gnome.Terminal.desktop'
-
-[notifications/application/snapd-desktop-integration-snapd-desktop-integration]
-application-id='snapd-desktop-integration_snapd-desktop-integration.desktop'
-
-[notifications/application/telegram-desktop-telegram-desktop]
-application-id='telegram-desktop_telegram-desktop.desktop'
-
-[notifications/application/vlc]
-application-id='vlc.desktop'
-
-[notifications/application/zoom]
-application-id='Zoom.desktop'
-
-[peripherals/mouse]
-speed=-0.78435114503816794
-
-[peripherals/touchpad]
-two-finger-scrolling-enabled=true
+[notifications/application/ulauncher]
+application-id='ulauncher.desktop'
 
 [screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/frost/.local/share/backgrounds/2026-03-31-09-20-03-peakpx.jpg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
-
-[session]
-idle-delay=uint32 900
+picture-uri='file:///usr/share/backgrounds/Monterey/Monterey-timed.xml'
+primary-color='#ffffff'
+secondary-color='#000000'
 
 [wm/keybindings]
-switch-input-source=['XF86Keyboard']
-switch-input-source-backward=['<Shift>XF86Keyboard']
+maximize=@as []
+switch-input-source=@as []
+switch-input-source-backward=@as []
+unmaximize=@as []
 
 [wm/preferences]
-button-layout=':minimize,maximize,close'
-num-workspaces=4
-titlebar-font='Inter Bold 11'
+button-layout='close,minimize,maximize:'
